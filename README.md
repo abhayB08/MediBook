@@ -24,7 +24,7 @@
 
 > 🚀 MediBook is deployed on Vercel.
 
-**Live Demo:** `Add your Vercel URL here`
+**Live Demo:** (https://medi-book-tau.vercel.app/)
 
 **Source Code:**  
 https://github.com/abhayB08/MediBook
