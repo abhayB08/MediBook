@@ -3,69 +3,107 @@
 ### Smart Hospital Appointment Booking System
 
 <p align="center">
-  <strong>A modern React-based platform for connecting patients with doctors and managing hospital appointments.</strong>
+  <strong>A modern React-based platform for discovering doctors, booking appointments, and managing doctor schedules.</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/abhayB08/MediBook">
-    <img src="https://img.shields.io/badge/GitHub-MediBook-181717?style=for-the-badge&logo=github" alt="GitHub">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub">
   </a>
-  <img src="https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <a href="https://vercel.com/">
+    <img src="https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel" alt="Vercel">
+  </a>
+  <img src="https://img.shields.io/badge/React-JavaScript-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
   <img src="https://img.shields.io/badge/Vite-Fast-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel" alt="Vercel">
+  <img src="https://img.shields.io/badge/License-Educational%20Project-blue?style=for-the-badge" alt="License">
 </p>
 
 ---
 
-## ✨ Overview
+## 🌐 Live Application
+
+> 🚀 MediBook is deployed on Vercel.
+
+**Live Demo:** `Add your Vercel URL here`
+
+**Source Code:**  
+https://github.com/abhayB08/MediBook
+
+---
+
+## 📖 About MediBook
 
 **MediBook** is a modern hospital appointment booking web application built with **React.js and Vite**.
 
-The platform provides separate experiences for **patients and doctors**, allowing patients to discover doctors and book appointments while giving doctors tools to manage appointments, patients, schedules, consultations, analytics, and notifications.
+The application provides separate experiences for **patients and doctors**.
 
-The project focuses on creating a smooth and organized digital appointment experience with a clean, responsive interface.
+Patients can:
 
----
+- Discover doctors
+- View doctor profiles
+- Select appointment dates
+- Choose available time slots
+- Book appointments
+- View their appointments
 
-## 🎯 Problem
-
-Traditional appointment processes can be time-consuming and difficult to manage.
-
-Patients may need to:
-
-- Search for suitable doctors
-- Find available appointment times
-- Manage their appointments
-- Keep track of booking information
-
-Doctors also need an organized way to:
+Doctors can:
 
 - Manage appointments
-- Control availability
-- View patients
-- Manage their schedules
+- Manage patients
+- Configure their schedule
+- Manage consultations
+- View analytics
+- Manage notifications
+- Update their profile
 
-**MediBook brings these workflows together into one web application.**
+The project focuses on creating a simple, organized, and user-friendly digital appointment experience.
 
 ---
 
-## 🚀 Key Features
+# 🎯 Problem Statement
 
-### 👤 Patient Experience
+Traditional appointment processes can be difficult to manage for both patients and doctors.
+
+Patients may have difficulty:
+
+- Finding suitable doctors
+- Checking available appointment times
+- Managing their bookings
+- Keeping track of appointments
+
+Doctors need an organized way to:
+
+- Manage appointments
+- Control their availability
+- View patient information
+- Manage schedules
+- Track their activities
+
+### 💡 Solution
+
+MediBook provides a centralized frontend experience where patients and doctors can interact with appointment-related workflows through dedicated dashboards.
+
+---
+
+# ✨ Features
+
+## 👤 Patient Features
 
 - 🔐 Patient Registration & Login
 - 👨‍⚕️ Browse Doctors
 - 🏥 Browse Medical Departments
 - 📋 View Doctor Profiles
 - 📅 Select Appointment Date
-- ⏰ Select Available Time Slot
+- ⏰ Select Appointment Time
 - ✅ Book Appointments
+- 🚫 Appointment Conflict Prevention
 - 📱 Booking Confirmation / Simulated SMS
 - 📑 View Appointments
 - 👤 Manage Profile
 
-### 🩺 Doctor Experience
+---
+
+## 🩺 Doctor Features
 
 - 🔐 Doctor Login
 - 📊 Doctor Dashboard
@@ -77,48 +115,65 @@ Doctors also need an organized way to:
 - 🔔 Notifications
 - 👤 Doctor Profile Management
 
-### 🛡️ Application Features
+---
+
+## ⚡ Application Features
 
 - 🔒 Protected Routes
 - 👥 Role-based access
-- 🚫 Appointment conflict prevention
-- 💾 Local browser persistence
-- 📱 Responsive UI
+- 🚫 Duplicate appointment prevention
+- 💾 LocalStorage persistence
 - 🧩 Reusable React components
 - 🧭 Client-side routing
-- ⚡ Fast Vite development environment
+- 📱 Responsive interface
+- ⚡ Vite-powered development environment
+- 🎨 Modern user interface
 
 ---
 
-## 🔄 Application Flow
+# 🔑 Demo Access
+
+MediBook contains separate **Patient** and **Doctor** experiences.
+
+### 👤 Patient
+
+Use the application's registration/login flow to access the patient dashboard.
+
+### 🩺 Doctor
+
+Use the doctor login flow to access the doctor dashboard.
+
+> **Note:** Demo credentials should be added here only when they are confirmed from the current application code.
+
+---
+
+# 🔄 Application Flow
 
 ```text
-                    ┌──────────────────┐
-                    │     MediBook     │
-                    └────────┬─────────┘
-                             │
-              ┌──────────────┴──────────────┐
-              │                             │
-              ▼                             ▼
-        👤 PATIENT                     🩺 DOCTOR
-              │                             │
-              ▼                             ▼
-        Login / Register              Doctor Login
-              │                             │
-              ▼                             ▼
-        Browse Doctors                Dashboard
-              │                             │
-              ▼                    ┌────────┼────────┐
-        Doctor Profile              │        │        │
-              │                     ▼        ▼        ▼
-              ▼                 Schedule Patients Appointments
-        Select Date
-              │
-              ▼
-        Select Time Slot
-              │
-              ▼
-        Confirm Booking
-              │
-              ▼
-        My Appointments with readable imports, component blocks, JSX indentation, and one logical statement per line. The project does not require a formatter package to run.
+                         🏥 MediBook
+                              │
+                 ┌────────────┴────────────┐
+                 │                         │
+                 ▼                         ▼
+             👤 PATIENT                🩺 DOCTOR
+                 │                         │
+                 ▼                         ▼
+          Login / Register            Doctor Login
+                 │                         │
+                 ▼                         ▼
+          Browse Doctors              Dashboard
+                 │                         │
+                 ▼               ┌─────────┼─────────┐
+          Doctor Profile          │         │         │
+                 │                ▼         ▼         ▼
+                 ▼             Schedule  Patients  Appointments
+          Select Date
+                 │
+                 ▼
+          Select Time Slot
+                 │
+                 ▼
+          Confirm Booking
+                 │
+                 ▼
+          My Appointments
