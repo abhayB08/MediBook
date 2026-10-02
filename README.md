@@ -1,77 +1,124 @@
-# MediBook Pro
+# 🏥 MediBook
 
-Advanced React + Vite hospital appointment booking system for a class project.
+### Smart Hospital Appointment Booking System
 
-## Features
+<p align="center">
+  <strong>A modern React-based platform for connecting patients with doctors and managing hospital appointments.</strong>
+</p>
 
-- Patient and doctor login
-- Patient registration
-- Doctor directory and profiles
-- Search and specialty filters
-- Date and time-slot booking
-- Automatic confirmation
-- Duplicate slot protection
-- Personalized simulated SMS
-- Patient dashboard
-- Doctor dashboard
-- Appointment cancellation/completion
-- LocalStorage persistence
-- Responsive modern UI
+<p align="center">
+  <a href="https://github.com/abhayB08/MediBook">
+    <img src="https://img.shields.io/badge/GitHub-MediBook-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Vite-Fast-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel" alt="Vercel">
+</p>
 
-## Demo accounts
+---
 
-Patient:
-- Email: patient@medibook.demo
-- Password: patient123
+## ✨ Overview
 
-Doctor:
-- Email: amit@medibook.demo
-- Password: doctor123
+**MediBook** is a modern hospital appointment booking web application built with **React.js and Vite**.
 
-Other doctors:
-- neha@medibook.demo
-- rahul@medibook.demo
-- priya@medibook.demo
-- karan@medibook.demo
-- riya@medibook.demo
+The platform provides separate experiences for **patients and doctors**, allowing patients to discover doctors and book appointments while giving doctors tools to manage appointments, patients, schedules, consultations, analytics, and notifications.
 
-Password for all doctors: doctor123
+The project focuses on creating a smooth and organized digital appointment experience with a clean, responsive interface.
 
-## Run
+---
 
-npm install
-npm run dev
+## 🎯 Problem
 
-## Important
+Traditional appointment processes can be time-consuming and difficult to manage.
 
-This is a React-only academic prototype. Authentication, appointment storage and SMS are simulated in localStorage. A production hospital system would require a backend, database, secure authentication and server-side slot locking.
+Patients may need to:
 
-## Advanced Doctor Command Center
+- Search for suitable doctors
+- Find available appointment times
+- Manage their appointments
+- Keep track of booking information
 
-Doctor accounts have a significantly richer workspace:
+Doctors also need an organized way to:
 
-- Command-center dashboard
-- KPI cards: appointments, patients, completion and revenue
-- Patient management
-- Working-day availability
-- Slot management
-- Consultation room
-- Symptoms, diagnosis, medicine, dosage and notes
-- Consultation completion
-- Practice analytics
-- Appointment trend chart
-- Notification center
-- Quick actions
-- Doctor profile management
+- Manage appointments
+- Control availability
+- View patients
+- Manage their schedules
 
-### Doctor navigation
+**MediBook brings these workflows together into one web application.**
 
-Dashboard → Appointments → Patients → Schedule
+---
 
-Additional tools are available from the doctor profile dropdown:
-Consultations → Analytics → Notifications → Profile
+## 🚀 Key Features
 
+### 👤 Patient Experience
 
-## Code formatting
+- 🔐 Patient Registration & Login
+- 👨‍⚕️ Browse Doctors
+- 🏥 Browse Medical Departments
+- 📋 View Doctor Profiles
+- 📅 Select Appointment Date
+- ⏰ Select Available Time Slot
+- ✅ Book Appointments
+- 📱 Booking Confirmation / Simulated SMS
+- 📑 View Appointments
+- 👤 Manage Profile
 
-The source files are intentionally formatted with readable imports, component blocks, JSX indentation, and one logical statement per line. The project does not require a formatter package to run.
+### 🩺 Doctor Experience
+
+- 🔐 Doctor Login
+- 📊 Doctor Dashboard
+- 📅 Appointment Management
+- 👥 Patient Management
+- 🗓️ Schedule Management
+- 🩺 Consultation Management
+- 📈 Analytics Dashboard
+- 🔔 Notifications
+- 👤 Doctor Profile Management
+
+### 🛡️ Application Features
+
+- 🔒 Protected Routes
+- 👥 Role-based access
+- 🚫 Appointment conflict prevention
+- 💾 Local browser persistence
+- 📱 Responsive UI
+- 🧩 Reusable React components
+- 🧭 Client-side routing
+- ⚡ Fast Vite development environment
+
+---
+
+## 🔄 Application Flow
+
+```text
+                    ┌──────────────────┐
+                    │     MediBook     │
+                    └────────┬─────────┘
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+              ▼                             ▼
+        👤 PATIENT                     🩺 DOCTOR
+              │                             │
+              ▼                             ▼
+        Login / Register              Doctor Login
+              │                             │
+              ▼                             ▼
+        Browse Doctors                Dashboard
+              │                             │
+              ▼                    ┌────────┼────────┐
+        Doctor Profile              │        │        │
+              │                     ▼        ▼        ▼
+              ▼                 Schedule Patients Appointments
+        Select Date
+              │
+              ▼
+        Select Time Slot
+              │
+              ▼
+        Confirm Booking
+              │
+              ▼
+        My Appointments with readable imports, component blocks, JSX indentation, and one logical statement per line. The project does not require a formatter package to run.
