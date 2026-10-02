@@ -1,0 +1,17 @@
+MEDIBOOK — START HERE
+
+IMPORTANT: If you see only Home / Dashboard / Appointments at the top, you are running the OLD MediBook folder.
+The correct doctor version has: Dashboard / Appointments / Patients / Schedule.
+
+1. Extract this ZIP into a NEW folder named MediBook.
+2. Open THAT exact folder in VS Code.
+3. In the terminal, run:
+   npm install
+   npm run dev
+4. Open the localhost URL printed by Vite.
+5. Doctor login:
+   Email: amit@medibook.demo
+   Password: doctor123
+6. The URL should become /doctor/dashboard.
+
+Do NOT copy individual files into the old project. Do NOT run Vite from the old folder.

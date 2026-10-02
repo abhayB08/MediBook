@@ -1,0 +1,26 @@
+MEDIBOOK FIXES
+
+Fixed:
+1. New patient registration now actually creates and stores an account.
+2. Registered patients can log out and log back in.
+3. Booking now uses one consistent AppointmentContext API.
+4. Doctor IDs are consistent between doctors.js, authentication and appointments.
+5. Patient booking stores doctor ID/name, patient ID/name, department, date, time and fee.
+6. Duplicate doctor/date/time bookings are blocked.
+7. Appointment data is saved to localStorage.
+8. Cancel, complete, check-in and consultation status functions remain connected.
+9. Old compatibility names (book/isBooked/cancel) are supported.
+10. Fixed the incorrect `import react from "react"` in BookAppointment.jsx.
+
+IMPORTANT:
+Because this is a React-only class project, data is simulated with localStorage.
+To start completely fresh in your browser, run the app and clear localStorage once:
+DevTools -> Application -> Local Storage -> localhost:5173 -> delete medibook_* entries.
+
+Demo patient:
+patient@medibook.demo
+patient123
+
+Demo doctor:
+amit@medibook.demo
+doctor123
